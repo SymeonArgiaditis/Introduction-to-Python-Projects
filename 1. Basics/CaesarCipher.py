@@ -1,5 +1,3 @@
-#CAESAR CIPHER
-
 def caesar(text, shift, encrypt = True) -> str:
     if not isinstance(shift, int):
         return "Shift must be an integer value!"
