@@ -22,7 +22,6 @@ def validate_isbn(isbn, length):
 
 
 def calculate_check_digit_10(main_digits_list):
-    # Note: You don't have to fully understand the logic in this function.
     digits_sum = 0
     # Multiply each of the first 9 digits by its corresponding weight (10 to 2) and sum up the results
     for index, digit in enumerate(main_digits_list):
@@ -30,9 +29,6 @@ def calculate_check_digit_10(main_digits_list):
     # Find the remainder of dividing the sum by 11, then subtract it from 11
     result = 11 - digits_sum % 11
     # The calculation result can range from 1 to 11.
-    # If the result is 11, use 0.
-    # If the result is 10, use upper case X.
-    # Use the value as it is for other numbers.
     if result == 11:
         expected_check_digit = '0'
     elif result == 10:
@@ -42,9 +38,7 @@ def calculate_check_digit_10(main_digits_list):
     return expected_check_digit
 
 
-
 def calculate_check_digit_13(main_digits_list):
-    # Note: You don't have to fully understand the logic in this function.
     digits_sum = 0
     # Multiply each of the first 12 digits by 1 and 3 alternately (starting with 1), and sum up the results
     for index, digit in enumerate(main_digits_list):
@@ -55,14 +49,11 @@ def calculate_check_digit_13(main_digits_list):
     # Find the remainder of dividing the sum by 10, then subtract it from 10
     result = 10 - digits_sum % 10
     # The calculation result can range from 1 to 10.
-    # If the result is 10, use 0.
-    # Use the value as it is for other numbers.
     if result == 10:
         expected_check_digit = '0'
     else:
         expected_check_digit = str(result)
     return expected_check_digit
-
 
 
 def main():
@@ -95,5 +86,3 @@ def main():
         validate_isbn(isbn, length)
     else:
         print('Length should be 10 or 13.')
-
-#main()
