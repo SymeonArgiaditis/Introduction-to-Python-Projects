@@ -20,7 +20,6 @@ def validate_isbn(isbn, length):
         print('Invalid ISBN Code.')
 
 
-
 def calculate_check_digit_10(main_digits_list):
     digits_sum = 0
     # Multiply each of the first 9 digits by its corresponding weight (10 to 2) and sum up the results
