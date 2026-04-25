@@ -38,3 +38,5 @@ if __name__ == "__main__'":
     print(f"Unsorted array: {numbers}")
     merge_sort(numbers)
     print(f"Sorted array: {numbers}")
+
+    #broooo
