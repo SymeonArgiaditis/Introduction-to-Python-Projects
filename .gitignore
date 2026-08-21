@@ -1,25 +1,10 @@
 # Python cache
 __pycache__/
-*.py[cod]
-*$py.class
 
 # Virtual environments
 venv/
 .venv/
 env/
 
-# Distribution / packaging
-build/
-dist/
-*.egg-info/
-
-# IDEs and editors
+# IDE
 .vscode/
-.idea/
-
-# OS files
-.DS_Store
-Thumbs.db
-
-# Logs
-*.log
